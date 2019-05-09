@@ -1,8 +1,8 @@
 package downloader
 
 import (
-	"Go-Spider/infra/url"
 	"fmt"
+	"github.com/xiaochengfu/Go-Spider/infra/url"
 	"testing"
 )
 

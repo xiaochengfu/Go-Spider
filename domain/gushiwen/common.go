@@ -1,7 +1,7 @@
 package gushiwen
 
 import (
-	"Go-Spider/infra/downloader"
+	"github.com/xiaochengfu/Go-Spider/infra/downloader"
 	"strings"
 
 	"regexp"

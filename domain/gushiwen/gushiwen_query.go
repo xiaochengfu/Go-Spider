@@ -3,11 +3,11 @@ package gushiwen
 import (
 	"fmt"
 
-	"Go-Spider/src/model"
+	"github.com/xiaochengfu/Go-Spider/src/model"
 
 	"strconv"
 
-	"Go-Spider/infra/initial"
+	"github.com/xiaochengfu/Go-Spider/infra/initial"
 
 	"strings"
 

@@ -1,10 +1,10 @@
 package cmd
 
 import (
-	"Go-Spider/infra/initial"
-	"Go-Spider/src/model"
 	"encoding/json"
 	"fmt"
+	"github.com/xiaochengfu/Go-Spider/infra/initial"
+	"github.com/xiaochengfu/Go-Spider/src/model"
 	"math/rand"
 
 	"os"

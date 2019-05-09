@@ -1,11 +1,11 @@
 package main
 
 import (
-	"Go-Spider/domain/dongqiudi"
-	"Go-Spider/domain/gushiwen"
-	"Go-Spider/infra/initial"
-	"Go-Spider/src/model"
 	"fmt"
+	"github.com/xiaochengfu/Go-Spider/domain/gushiwen"
+	"github.com/xiaochengfu/Go-Spider/domain/pexels"
+	"github.com/xiaochengfu/Go-Spider/infra/initial"
+	"github.com/xiaochengfu/Go-Spider/src/model"
 )
 
 func init() {
@@ -41,7 +41,7 @@ func Start() {
 		var engine gushiwen.SimpleEngine
 		var results []gushiwen.Request
 		var rootURL = "https://www.gushiwen.org/shiwen/default.aspx?page=%d&type=0&id=0"
-		for index := 1; index <= 50; index++ {
+		for index := 1; index <= 2; index++ {
 			url := fmt.Sprintf(rootURL, index)
 			results = append(results, gushiwen.Request{
 				URL: url,
@@ -58,9 +58,9 @@ func Start() {
 func main() {
 	//defer initial.DataBase.Close()
 	//meizitu.Start()
-	dongqiudi.StartDongQiuDi()
+	//dongqiudi.StartDongQiuDi()
 	//githubtrending.TrendingStart()
-	//pexels.Start()
+	pexels.Start()
 	//cmd.Execute()
 	//Start()
 
